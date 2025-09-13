@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contructs/patientserial.sol": "myContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contructs/patientserial.sol": {
+			"keccak256": "0x0da856a0804983d6860f7af32c5e916cf8c83ea8f425e73230550235166b64ff",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://958d81d83c899f59c0cfee728404c4bd029255945763c0109e1a3ab53ddebd4a",
+				"dweb:/ipfs/QmcCCpDmBsZz3NLmpR7KjsQzmR74i8g9LAZt3mmo1kgt9M"
+			]
+		}
+	},
+	"version": 1
+}
