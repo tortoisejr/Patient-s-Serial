@@ -4,7 +4,252 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "PatientsSerial",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "Date",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "patientId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "syndrome",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "serialNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "roomNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "doctorId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "paymentStatus",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "special",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "sarved",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "doctorCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "doctors",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "doctorId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "digree",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "Spaciality",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dutyStartTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "dutyEndTime",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "Availablity",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "roomNo",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "patientCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "patients",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "Date",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "patientId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "syndrome",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "serialNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "roomNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "doctorId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "paymentStatus",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "special",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "sarved",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "serialCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "specialPatientCount",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +278,11 @@
 	},
 	"sources": {
 		"contructs/patientserial.sol": {
-			"keccak256": "0x0da856a0804983d6860f7af32c5e916cf8c83ea8f425e73230550235166b64ff",
+			"keccak256": "0x5249ad2c832d0f5d03a38dd5add92b7208da1a1f4d5ddaba94d6425fa638156c",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://958d81d83c899f59c0cfee728404c4bd029255945763c0109e1a3ab53ddebd4a",
-				"dweb:/ipfs/QmcCCpDmBsZz3NLmpR7KjsQzmR74i8g9LAZt3mmo1kgt9M"
+				"bzz-raw://194274d29a355ba38dd6a5f8e4b8424eb3cbc1abdcb4d1faa6be960e451f530b",
+				"dweb:/ipfs/QmZFAZsH7Cq7DAFZMzWjVwvviKUFCnY4FbJTssZPV1Hjb6"
 			]
 		}
 	},
