@@ -6,6 +6,134 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "doctorId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "digree",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "Spaciality",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "dutyStartTime",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "dutyEndTime",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "Availablity",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "roomNo",
+						"type": "uint256"
+					}
+				],
+				"name": "adddoctor",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "Date",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "patientId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "syndrome",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "serialNo",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "roomNo",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "doctorId",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "paymentStatus",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "special",
+						"type": "bool"
+					},
+					{
+						"indexed": false,
+						"internalType": "bool",
+						"name": "sarved",
+						"type": "bool"
+					}
+				],
+				"name": "addpatient",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -17,7 +145,7 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "Date",
+						"name": "serialNo",
 						"type": "uint256"
 					},
 					{
@@ -26,52 +154,60 @@
 						"type": "uint256"
 					},
 					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "age",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "syndrome",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "serialNo",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "roomNo",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "doctorId",
-						"type": "uint256"
-					},
-					{
-						"internalType": "bool",
-						"name": "paymentStatus",
-						"type": "bool"
-					},
-					{
-						"internalType": "bool",
-						"name": "special",
-						"type": "bool"
-					},
-					{
 						"internalType": "bool",
 						"name": "sarved",
 						"type": "bool"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_date",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_age",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_syndrome",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_roomNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_doctorId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "_paymentStatus",
+						"type": "bool"
+					},
+					{
+						"internalType": "bool",
+						"name": "_special",
+						"type": "bool"
+					}
+				],
+				"name": "addSerial",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -278,11 +414,11 @@
 	},
 	"sources": {
 		"contructs/patientserial.sol": {
-			"keccak256": "0x5249ad2c832d0f5d03a38dd5add92b7208da1a1f4d5ddaba94d6425fa638156c",
+			"keccak256": "0x0be1237f52f36c9a733b6bbf6c8064d999feb9a6080424c6c774aa6eef546a1b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://194274d29a355ba38dd6a5f8e4b8424eb3cbc1abdcb4d1faa6be960e451f530b",
-				"dweb:/ipfs/QmZFAZsH7Cq7DAFZMzWjVwvviKUFCnY4FbJTssZPV1Hjb6"
+				"bzz-raw://2025028aba5c340bdcf53525f31e2f368afc6dcb12d35991a12cbcb18a9b6620",
+				"dweb:/ipfs/QmVmQ4pHR3evYoF9hbUN1EV3dwnujxsZPPZK2ZZiqFLcYF"
 			]
 		}
 	},
